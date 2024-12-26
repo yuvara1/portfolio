@@ -401,7 +401,8 @@ span .load {
      left: 102%;
 }
 
-@media (max-width:600px) {
+@media (max-width:600px) 
+{
 
      nav .logo {
           position: absolute;
@@ -583,6 +584,61 @@ span .load {
      
           border: 1px solid rgba(255, 255, 255, 0);
      }
+          #lang1::after {
+               content: "90%";
+               position: absolute;
+               top: -5px;
+               left: 102%;
+          }
+     
+          #lang2::after {
+               content: "83%";
+               position: absolute;
+               top: -5px;
+               left: 102%;
+          }
+     
+          #lang3::after {
+               content: "60%";
+               position: absolute;
+               top: -5px;
+               left: 102%;
+          }
+     
+          #lang4::after {
+               content: "98%";
+               position: absolute;
+               top: -5px;
+               left: 102%;
+          }
+     
+          #lang5::after {
+               content: "90%";
+               position: absolute;
+               top: -5px;
+               left: 102%;
+          }
+     
+          #lang6::after {
+               content: "89%";
+               position: absolute;
+               top: -5px;
+               left: 102%;
+          }
+     
+          #lang7::after {
+               content: "77%";
+               position: absolute;
+               top: -5px;
+               left: 102%;
+          }
+     
+          #lang8::after {
+               content: "50%";
+               position: absolute;
+               top: -5px;
+               left: 102%;
+          }
 }
 
 
