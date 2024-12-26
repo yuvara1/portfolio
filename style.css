@@ -560,7 +560,7 @@ span .load {
           height: auto;
           width: 80%;
           border: 1px solid white;
-          padding: 5vh 5vw;
+          padding: 2vh 1vw;
           box-shadow: 0 0 20px 25px #fdfdfd;
           background-color: white;
           color: rgb(7, 0, 0);
@@ -581,8 +581,9 @@ span .load {
      }
      #Contact 
      {
-          margin-top: 10vh;
-          border: 1px solid rgba(255, 255, 255, 0);
+          position: relative;
+          margin-top: 20vh;
+          border:5px solid rgba(105, 28, 28, 0);
      }
           #lang1::after {
                content: "90%";
