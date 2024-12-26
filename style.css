@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+
 * {
      padding: 0;
      margin: 0;
@@ -125,7 +126,7 @@ section {
 
 .main-container {
      position: relative;
-     top: 10vh;
+     top: 20vh;
      width: 100%;
      height: 100%;
      display: flex;
@@ -247,7 +248,7 @@ section {
 #project,
 #Contact {
      position: relative;
-     /* margin-top: 10vh; */
+     margin-top: 10vh;
      height: 130vh;
      width: 100vw;
      color: rgb(255, 252, 252);
@@ -288,9 +289,10 @@ section {
      display: flex;
      align-items: center;
      flex-wrap: wrap;
-     margin-right: 30px;
+     justify-content: space-evenly;
      height: auto;
      width: 40%;
+     
      /* border: 1px solid white; */
 }
 
@@ -335,14 +337,16 @@ span .load {
 }
 
 #langCont {
+     gap:60px;
      display: flex;
      position: relative;
-     height: 100vh;
+   
      flex-wrap: wrap;
      width: 100%;
      justify-content: space-evenly;
      overflow: hidden;
      align-items: center;
+    
 }
 
 #lang1::after {
@@ -461,6 +465,7 @@ span .load {
           align-items: center;
           justify-content: center;
           /* border: 1px solid rgb(191, 69, 69); */
+          gap: 30px;
      }
 
      #flex {
@@ -472,18 +477,19 @@ span .load {
           /* height: 100vh; */
           /* width: 100vw; */
           color: white;
-          border: 2px white solid;
+          /* border: 2px white solid; */
      }
 
      .lang {
-          border: 1px solid rgb(127, 18, 91);
+          /* border: 1px solid rgb(127, 18, 91); */
           position: relative;
           margin-top: 4vh;
           display: flex;
           flex-wrap: wrap;
-          justify-content: space-evenly;
+          justify-content: space-around;
           width: 80%;
-          /* align-items: center; */
+          
+          align-items: center;
      }
 
      .lang span {
@@ -655,9 +661,6 @@ span .load {
           top: 30vh;
      }
 }
-
-
-
 
 
 #Projects {
