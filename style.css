@@ -246,10 +246,12 @@ section {
 #Skills,
 #project,
 #Contact {
+     position: relative;
+     margin-top: 10vh;
      height: 130vh;
      width: 100vw;
      color: white;
-     /* border: 2px white solid; */
+     border: 2px white solid;
 }
 
 .box {
@@ -519,7 +521,7 @@ span .load {
           height: 120vh;
      }
 
-
+     
 
 
      .lang img {
@@ -641,7 +643,8 @@ span .load {
      }
 
      #Skills {
-          top: 10vh;
+          position:relative;
+          top: 20vh;
      }
 
      #Contact {
