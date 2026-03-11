@@ -7,7 +7,7 @@ const projects = [
     title: "Krishi Setu - Farmer - Buyer Connect Platform",
     description:
       "A web application that connects farmers directly with buyers, eliminating intermediaries and ensuring fair prices for agricultural produce.",
-    image: "/assets/project1.png",
+    image: "/assets/krishi.png",
     link: "https://krishi-setuu.vercel.app/",
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     title: "Olii - A OTT Platform for Movie Enthusiasts",
     description:
       "Olii is a web application that provides a platform for movie enthusiasts to discover, review, and discuss their favorite films. It offers personalized recommendations based on user preferences and viewing history.",
-    image: "/assets/project1.png",
+    image: "/assets/olii.png",
     link: "https://olii-ott.web.app",
   },
   {

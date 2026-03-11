@@ -76,7 +76,7 @@ export default function Skills() {
       </div>
 
       {/* Experience Section */}
-      <div className="bg-black w-full my-8 py-8 lg:my-16 lg:py-16">
+      {/* <div className="bg-black w-full my-8 py-8 lg:my-16 lg:py-16">
         <motion.h2
           className="text-2xl lg:text-4xl text-center text-white"
           initial={{ opacity: 0, y: -20 }}
@@ -87,7 +87,7 @@ export default function Skills() {
           My <span className="font-extrabold">Experience</span>
         </motion.h2>
 
-        {/* Experience Cards */}
+        Experience Cards
         <div className="px-5 lg:px-28 my-8 lg:mt-16 space-y-10">
           {experiences.map((exp, index) => (
             <motion.div
@@ -120,7 +120,7 @@ export default function Skills() {
             </motion.div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

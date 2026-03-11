@@ -1,5 +1,19 @@
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion } from "motion/react";
+import { useEffect } from "react";
+function OppositeColorText({ text }) {
+  const [hovered, setHovered] = useState(false);
+
+  return (
+    <span
+      className="text-white bg-black hover:text-black hover:bg-white transition"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      {text}
+    </span>
+  );
+}
 
 export default function CustomCursor() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -63,7 +77,7 @@ export default function CustomCursor() {
 
   return (
     <motion.div
-      className="fixed bg-white rounded-full pointer-events-none mix-blend-difference z-50 hidden lg:block"
+      className="fixed bg-white rounded-full pointer-events-none mix-blend-difference z-50 hidden lg:block [transform:translateZ(0)]"
       style={{ width: cursorSize, height: cursorSize }}
       animate={{
         x: cursorPosition.x - cursorSize / 2,
