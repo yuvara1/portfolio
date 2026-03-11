@@ -32,7 +32,7 @@ export default function Navbar() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className={`fixed lg:px-28 px-5 top-0 left-0 w-full z-50 bg-white p-5 transition-shadow duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 bg-white p-3 sm:p-4 md:p-5 lg:px-28 transition-shadow duration-300 ${
         hasShadow ? "shadow-md" : "shadow-none"
       }`}
     >
@@ -42,11 +42,11 @@ export default function Navbar() {
           whileTap={{ scale: 0.9 }}
           onClick={() => scrollToSection("home")}
           className="h-9 cursor-pointer"
-          src="/assets/logo.svg"
+          src="/assets/my-logo.png"
           alt="Logo"
         />
 
-        <ul className="hidden lg:flex items-center gap-x-7 font-semibold">
+        <ul className="hidden lg:flex items-center gap-x-5 font-semibold">
           {["about", "skills", "projects", "contact"].map((section) => (
             <motion.li
               key={section}
@@ -95,37 +95,41 @@ export default function Navbar() {
             animate={{ y: 0 }}
             exit={{ y: "-100%" }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden fixed top-0 right-0 h-full w-full bg-white shadow z-50"
+            className="lg:hidden fixed top-0 left-0 h-full w-full bg-white shadow z-50 flex flex-col items-center justify-center"
           >
             <button
-              className="absolute top-5 right-5 text-2xl"
+              className="absolute top-6 right-6 text-3xl p-2 rounded-full hover:bg-gray-100 transition"
               onClick={() => setIsOpen(false)}
+              aria-label="Close menu"
             >
               <HiX />
             </button>
-            <ul className="flex flex-col items-start ml-16 mt-28 h-full gap-y-6 font-semibold">
+            <ul className="flex flex-col items-start px-8 pt-28 gap-y-8 font-semibold text-lg w-full">
               {["about", "skills", "projects", "contact"].map((section) => (
                 <motion.li
                   key={section}
-                  className="border-b"
-                  whileHover={{ scale: 1.1 }}
+                  className="w-full border-b pb-2"
+                  whileHover={{ scale: 1.08 }}
                 >
-                  <button onClick={() => scrollToSection(section)}>
+                  <button
+                    className="w-full text-left"
+                    onClick={() => scrollToSection(section)}
+                  >
                     {section.charAt(0).toUpperCase() + section.slice(1)}
                   </button>
                 </motion.li>
               ))}
               <motion.a
                 href="https://drive.google.com/file/d/19Zj8YsXR70-ox5Xts5UMogmCnsB2c2DV/view?usp=sharing"
-                className="relative inline-block px-4 py-2 font-semibold group"
-                whileHover={{ scale: 1.1 }}
+                className="relative inline-block px-4 py-3 font-semibold group mt-4"
+                whileHover={{ scale: 1.08 }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                 <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
                 <span className="relative text-black group-hover:text-white flex items-center gap-x-3">
-                  Resume <TbDownload size={16} />
+                  Resume <TbDownload size={18} />
                 </span>
               </motion.a>
             </ul>
