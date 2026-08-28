@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import Home from "./pages/Home";
 import Skills from "./components/Skills";
 import Navbar from "./components/Navbar";
@@ -19,6 +20,7 @@ export default function App() {
       <Contact />
 
       <Footer />
+      <Analytics />
     </div>
   );
 }
